@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    // Variáveis de casas a percorrer
+    int casasTorre = 5;   // Torre vai andar 5 casas para a direita
+    int casasBispo = 5;   // Bispo vai andar 5 casas na diagonal (cima + direita)
+    int casasRainha = 8;  // Rainha vai andar 8 casas para a esquerda
+
+    // 1. Torre (usando FOR)
+    printf("Movimento da Torre:\n");
+    for (int i = 1; i <= casasTorre; i++) {
+        printf("Direita\n");
+    }
+    printf("\n");
+
+    // 2. Bispo (usando WHILE)
+    printf("Movimento do Bispo:\n");
+    int i = 1; // contador começa em 1
+    while (i <= casasBispo) {
+        printf("Cima, Direita\n");
+        i++;
+    }
+    printf("\n");
+
+    // 3. Rainha (usando DO-WHILE)
+    printf("Movimento da Rainha:\n");
+    int j = 1;
+    do {
+        printf("Esquerda\n");
+        j++;
+    } while (j <= casasRainha);
+
+    return 0;
+}
