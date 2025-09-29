@@ -5,6 +5,7 @@ int main() {
     int casasTorre = 5;   // Torre vai andar 5 casas para a direita
     int casasBispo = 5;   // Bispo vai andar 5 casas na diagonal (cima + direita)
     int casasRainha = 8;  // Rainha vai andar 8 casas para a esquerda
+    int casasCavalo = 3; // Cavalo vai andar 3 vezes (2 para baixo, 1 para esquerda)
 
     // 1. Torre (usando FOR)
     printf("Movimento da Torre:\n");
@@ -29,6 +30,17 @@ int main() {
         printf("Esquerda\n");
         j++;
     } while (j <= casasRainha);
+
+
+    // 4. Cavalo (usando FOR aninhado)
+    printf("\nMovimento do Cavalo:\n");
+    for (int k = 1; k ==1; k++) {
+        for (int l = 1; l < 3; l++) {
+            printf("Baixo\n");
+        }
+        printf("Esquerda\n");
+}
+printf("\n");
 
     return 0;
 }
